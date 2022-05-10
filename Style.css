@@ -1,0 +1,768 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Reset the margins of all the boxes to zero*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 20px;
+}
+.unbehaved-element {
+	font-size: 2em;
+}
+@media(max-width: 1200px) {
+	html {
+		font-size: 18px;
+	}
+	.unbehaved-element {
+		font-size: 1.9em;
+		/* Fine tune unbehaved elements */
+	}
+}
+/* Add background color to the top navigation */
+
+.topnav {
+	background-color: white;
+	overflow: auto;
+	position: fixed;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	justify-content: center;
+}
+/* Style the links inside the navigation bar */
+
+.topnav a {
+	align-content: center;
+	color: #3dd353;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	font-size: 25px;
+	display: inline-block;
+}
+/* Change the color of links on hover */
+
+.topnav a:hover {
+	background-color: #00cc00;
+	color: white;
+}
+/* Add a color to the active/current link */
+
+.topnav a.active {
+	background-color: #00cc00;
+	color: white;
+	height: 100%;
+}
+.topnav .icon {
+	display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: sticky;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+.downarrow {
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0px;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	object-position: center;
+	position: inherit;
+}
+/* Bounce To Bottom */
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+/*design of home section*/
+
+.page1section {
+	background-image: url(Images/Millennium-Centre-exterior-view-Civic-Penoyre-Prasad.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 800px;
+	min-height: 50%;
+	max-height: inherit;
+	padding: 5px;
+	position: static;
+	top: 10px;
+	margin: auto;
+	min-width: 50%;
+	text-align: center;
+}
+.page1h1 {
+	color: whitesmoke;
+	text-shadow: 2px 2px 8px #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align: left;
+	padding-left: 10%;
+	padding-top: 15%;
+	display: table;
+}
+.page1h2 {
+	color: whitesmoke;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding-left: 10%;
+	padding-top: 2%;
+	display: table;
+}
+.page1header {
+	color: #00cc00;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px 8px #000000;
+	font-style: normal;
+	align-content: center;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 10px;
+}
+.homemain {
+	margin-top: 5px;
+	/* Add a top margin to avoid content overlay */
+}
+.section-one {
+	padding: 50px 25px 50px 25px;
+}
+.section-two {
+	padding: 100px 50px 0px 50px;
+}
+.column {
+	float: left;
+	width: 33%;
+	padding: 1px;
+	display: grid;
+}
+/* Clear floats after the columns */
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+.page1-1section {
+	height: 50px;
+}
+.duckvideo {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.page1text1 {
+	width: 100%;
+	padding: 3% 7% 3% 7%;
+	align-content: space-around
+}
+.page2section {
+	height: auto;
+	margin-top: 10px;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 0;
+	padding-bottom: 75px;
+	padding-right: 0;
+	position: static;
+}
+.page2header {
+	color: #87462c;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px 8px;
+	font-style: normal;
+	align-content: center;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 5%;
+}
+.page2h3 {
+	color: #333333;
+	font-style: italic;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	align-content: center;
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+.page2h3text {
+	color: #333333;
+	font-style: normal;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	align-content: center;
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+.rowpage2 {
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 10px 4px;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
+/* Create three equal columns that sits next to each other */
+
+.columnpage {
+	justify-content: center;
+	flex: 33%;
+	max-width: 33%;
+	padding: 0 4px;
+}
+.columnpage img {
+	margin-bottom: 8px;
+	width: 250px;
+	height: auto;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+	.columnpage {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.columnpage {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 600px) {
+	.modal-content {
+		width: 100%;
+	}
+}
+.button2 {
+	background-color: #ff9d1e;
+	width: 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+}
+.button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#grad3begin {
+	height: 200px;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(135, 70, 44, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(135, 70, 44, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(135, 70, 44, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(135, 70, 44, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(135, 70, 44, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(135, 70, 44, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#87462c', GradientType=0);
+}
+.section-3 {
+	background-color: #87462c;
+	padding-top: 30px;
+}
+.page3section {
+	height: auto;
+	margin: 0 auto;
+	background-color: #87462c;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-bottom: 75px;
+	padding-right: 0px;
+	position: static;
+}
+.page3header {
+	color: #ff9d1e;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px 10px #000000;
+	font-style: normal;
+	align-content: center;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 5%;
+}
+.page3h3 {
+	color: white;
+	font-style: italic;
+	text-shadow: 2px 2px 10px #000000;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	align-content: center;
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+.rowpage3 {
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 10px 4px;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
+/* Create three equal columns that sits next to each other */
+
+.columnpage3 {
+	align-content: center;
+	flex: 33%;
+	max-width: 33%;
+	padding: 0 4px;
+}
+.columnpage3 img {
+	margin-bottom: 4px;
+	margin-top: 4px;
+	vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+#grad3end {
+	height: 200px;
+	width: 100%;
+	background: rgb(135, 70, 44);
+	background: -moz-linear-gradient(top, rgba(135, 70, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(135, 70, 44, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+	background: -webkit-linear-gradient(top, rgba(135, 70, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: -o-linear-gradient(top, rgba(135, 70, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(135, 70, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgba(135, 70, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87462c', endColorstr='#000000', GradientType=0);
+}
+.page4section {
+	height: auto;
+	margin: 0 auto;
+	padding-top: px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	position: static;
+}
+.section-41 {
+	background-size: auto;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	background-color: black;
+	height: auto;
+}
+.section-4 {
+	background-size: auto;
+	background-repeat: no-repeat;
+	/*	padding-top: 30px;*/
+	height: auto;
+}
+@media only screen and (max-width: 600px) {
+	.section-4 {
+		background-image: none;
+	}
+	.cafelogo {
+		display: flex;
+		justify-content: space-around;
+	}
+	.columnpage img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		justify-content: space-around;
+	}
+	.modal-content {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 601px) {
+	.cafelogo {
+		display: none;
+	}
+}
+/* table page cafe*/
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+	border-color: #aaa;
+	margin: 0px auto;
+}
+.tg td {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #aaa;
+	color: #333;
+	background-color: #fff;
+}
+.tg th {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #aaa;
+	color: #fff;
+	background-color: #f38630;
+}
+.tg .tg-xq07 {
+	background-color: #efefef;
+	border-color: inherit;
+	text-align: left;
+	vertical-align: top
+}
+.tg .tg-4x9w {
+	font-weight: bold;
+	background-color: #00cc00;
+	border-color: inherit;
+	text-align: center;
+	vertical-align: top
+}
+.tg .tg-c3ow {
+	border-color: inherit;
+	text-align: center;
+	vertical-align: top
+}
+.tg .tg-wc2v {
+	background-color: #efefef;
+	border-color: inherit;
+	text-align: center;
+	vertical-align: top
+}
+.tg .tg-0pky {
+	border-color: inherit;
+	text-align: left;
+	vertical-align: top
+}
+.tg .tg-fpzu {
+	font-weight: bold;
+	background-color: #00cc00;
+	color: #ffffff;
+	border-color: inherit;
+	text-align: left;
+	vertical-align: top
+}
+@media screen and (max-width: 767px) {
+	.tg {
+		width: auto !important;
+	}
+	.tg col {
+		width: auto !important;
+	}
+	.tg-wrap {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		margin: auto 0px;
+	}
+}
+.rowpage4 {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	justify-content: space-around;
+}
+.page4header {
+	color: #019fd3;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px 4px #000000;
+	background-color: black;
+	font-style: normal;
+	align-content: center;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 2%;
+	width: 100%;
+}
+.page4cafeimage {
+	width: 100%;
+	align-content: center;
+}
+.page4h3 {
+	color: black;
+	background: rgba(255, 255, 255, 0.8);
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	align-content: center;
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+.cafeinfo {
+	justify-content: space-around;
+	text-transform: capitalize;
+	padding-bottom: 35px;
+	padding-top: 2%;
+}
+#grad5begin {
+	height: 200px;
+	width: 100%;
+	background: rgb(15, 15, 15);
+	background: -moz-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(1, 159, 211, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(15, 15, 15, 1)), color-stop(100%, rgba(1, 159, 211, 1)));
+	background: -webkit-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(1, 159, 211, 1) 100%);
+	background: -o-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(1, 159, 211, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(15, 15, 15, 1) 0%, rgba(1, 159, 211, 1) 100%);
+	background: linear-gradient(to bottom, rgba(15, 15, 15, 1) 0%, rgba(1, 159, 211, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#019fd3', GradientType=0);
+}
+.page5section {
+	height: auto;
+	margin: 0 auto;
+	background-color: #019fd3;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	position: static;
+}
+.page5header {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px 8px #000000;
+	font-style: normal;
+	align-content: center;
+	text-align: center;
+	text-transform: capitalize;
+	padding-bottom: 15px;
+	padding-top: 2%;
+}
+.enquiryheader {
+	color: #ff9d1e;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-style: normal;
+	align-content: left;
+	text-align: left;
+	text-transform: capitalize;
+}
+.rowpage5 {
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 10px 4px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.mapouter {
+	position: inherit;
+	text-align: right;
+	height: 525px;
+	width: 550px;
+	padding: auto;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none!important;
+	height: 525px;
+	width: 750px;
+	padding: 20px;
+}
+/* Add a background color and some padding around the form */
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin: 20px 10%;
+	width: 425px;
+	height: 425px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+	width: 100%;
+	/* Full width */
+	padding: 12px;
+	/* Some padding */
+	border: 1px solid #ccc;
+	/* Gray border */
+	border-radius: 4px;
+	/* Rounded borders */
+	box-sizing: border-box;
+	/* Make sure that padding and width stays in place */
+	margin-top: 6px;
+	/* Add a top margin */
+	margin-bottom: 16px;
+	/* Bottom margin */
+	resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+.smooth {
+	margin-bottom: 200px;
+	height: 100px
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1%;
+}
+.bdclogo {
+	padding: 5px;
+}
+.pfoot {
+	margin: 10px;
+}
+.foot2ndlogo {
+	width: 126px;
+	height: 45px;
+	padding: 5px;
+}
+.p1 {
+	padding: 5%;
+}

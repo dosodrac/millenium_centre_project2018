@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>David Cardoso Website Prototype</title>
+	<link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="topnav" id="topnav">
+		<a  class="hvr-bounce-to-bottom" href="#page1">Home</a> 
+		<a href="#page2" class="hvr-bounce-to-bottom">Our Students</a> 
+		<a href="#page3" class="hvr-bounce-to-bottom">Crafts</a> 
+		<a href="#page4" class="hvr-bounce-to-bottom">The Millennium Cafe</a> 
+		<a href="#page5" class="hvr-bounce-to-bottom">About Us</a> 
+		<a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	</div><!--    smooth scroll  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script> 
+	<script>
+	      $(document).ready(function(){
+	       // Add smooth scrolling to all links
+	       $("a").on('click', function(event) {
+
+	         // Make sure this.hash has a value before overriding default behavior
+	         if (this.hash !== "") {
+	           // Prevent default anchor click behavior
+	           event.preventDefault();
+
+	           // Store hash
+	           var hash = this.hash;
+
+	           // Using jQuery's animate() method to add smooth page scroll
+	           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	           $('html, body').animate({
+	             scrollTop: $(hash).offset().top
+	           }, 1200, function(){
+	        
+	             // Add hash (#) to URL when done scrolling (default click behavior)
+	             window.location.hash = hash;
+	           });
+	         } // End if
+	       });
+	      });
+	</script> 
+	<script>
+	         function myFunction() {
+	         var x = document.getElementById("topnav");
+	         if (x.className === "topnav") {
+	             x.className += " responsive";
+	         } else {
+	             x.className = "topnav";
+	         }
+	      } 
+	</script>
+	<section class="page1section">
+		<div id="page1">
+			<h1 class="page1h1" style="font-size:5vw;">Welcome<br>
+			to the<br>
+			Millennium Centre</h1><br>
+			<br>
+			<h2 class="page1h2" style="font-size:4vw;">We are made of Nature</h2>
+		</div>
+	</section>
+	<section class="page1-1section"></section>
+	<section class="page1-2section">
+		<div class="duckvideo">
+			<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube-nocookie.com/embed/HLn4xoNjdwU" width="560"></iframe> 
+		</div>
+		<div class="page1text1">
+			<h2 class="page1header" style="font-size:80px;">Home</h2>
+			<h3 class="page2h3" style="font-size:20px;">is what we are for a few dozen of birds and fishes, countless insects<br>
+			and all the vegetation that populate our Park.<br></h3>
+			<p class="p1">The Millennium Centre is a visitor centre which is open to the public throughout the year.<br>
+			<br>
+			The building is a permanent exhibition of ecological principles as well as housing educational displays in its public spaces.<br>
+			<br>
+			It includes:<br>
+			<br>
+			- an introduction to the history of the site;<br>
+			- information on the design and construction of the building;<br>
+			- environmentally themed educational displays.<br>
+			<br>
+			The building forms a natural gateway into the wide-open spaces of Eastbrookend Country Park and the Dagenham Chase Local Nature Reserve.<br>
+			<br>
+			The centre acts as the focal point for visitors and provides a comfortable venue for walkers, school groups and anyone wanting to learn more about the local countryside or environment.<br>
+			<br>
+			There are toilets and baby-changing facilities on site.<br>
+			<br></p>
+			<h3 align="center">Opening hours<br></h3><br>
+			<h4 align="center">April to September<br>
+			10am to 5pm (weekends 1pm to 5pm)<br>
+			Car park will be locked at 7pm.<br>
+			<br>
+			October to March<br>
+			10am to 4pm (Weekends 1pm to 4pm)<br>
+			<br>
+			Occasionally the building may be closed for staff training or health and safety reasons.<br>
+			<br>
+			Car park will be locked at 4pm.<br>
+			<br></h4>
+		</div>
+	</section>
+	<div class="downarrow"><img alt="Down arrows gif" src="Images/gif-bounce-arrow.gif" style="width:100px;height:75px;"></div>
+	<section class="page2section">
+		<div id="page2">
+			<div class="section-one.page2">
+				<h2 class="page2header" style="font-size:60px;">Our Students</h2>
+				<h3 class="page2h3" style="font-size:20px;">are unique in a special way - the best kind.<br>
+				They are the energy behind every handmade craft idea,<br>
+				every work in the grounds, every smile offered to our Cafe visitors.</h3><br>
+				<br>
+				<h3 class="page2h3text" style="font-size:16px">Students work everyday towards Edexcel BTEC Entry Level and Level 1 Qualifications<br>
+				in Hospitality andEdexcel Entry Level Skills for Independence and Work.<br>
+				<br>
+				Here's their opinion:<br>
+				"I enjoy speaking with customers/customer service."<br>
+				"This roll has given me confidence, my communications skills<br>
+				has improved and helped my socials skills."<br>
+				"Dogs on the leash helped me to workout my dog fear"</h3>
+				<div class="rowpage2">
+					<div class="columnpage"><img alt="Student check feeders" src="Images/IMG_1023.JPG" style="width:100%"> <img alt="Empty cafe room" src="Images/DSC_0753.JPG" style="width:100%;"> <img alt="Group of students with high visibility vests" src="Images/Black.Poplar.photos.003.JPG" style="width:100%"></div>
+					<div class="columnpage">
+						<img alt="Student cleans a table" src="Images/IMG_3300.JPG" style="width:100%"> <img alt="Student doing crafts" src="Images/bug.Hotel.JPG" style="width:100%"> <img alt="Group of students planting trees" src="Images/tree.planting.032.JPG" style="width:100%">
+						<div class="button2">
+							<a href="#page3">Click to check our crafts!</a>
+						</div>
+					</div>
+					<div class="columnpage"><img alt="Student weighting bird food" src="Images/IMG_0576.JPG" style="width:100%"> <img alt="Homemade cakes" src="Images/DSC_0744.JPG" style="width:100%"> <img alt="Horse ride" src="Images/IMG_2428.JPG" style="width:100%"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="grad3begin"></div>
+	<section class="page3section">
+		<div id="page3">
+			<a class="smooth" id="Crafts"></a>
+			<div class="row section-3">
+				<h2 class="page3header" style="font-size:60px;">Crafts</h2>
+				<h3 class="page3h3" style="font-size:20px;">Unique ideas made with love, always with Nature in mind<br>
+				- that's our handmade crafts.</h3>
+				<div class="rowpage3">
+					<div class="columnpage"><img alt="Bug Boxes" src="Images/millennium.photos.034.JPG" style="width:100%"> <img alt="Handmade gifts logo" src="Images/66547-OBS2HQ-229.jpg" style="width:100%"> <img alt="Sweet treats bags" src="Images/millennium.photos.036.JPG" style="width:100%"></div>
+					<div class="columnpage"><img alt="Handmade ideas logo" src="Images/66547-OBS2HQ-229.1.jpg" style="width:100%"> <img alt="Bird treats bags" src="Images/millennium.photos.037.JPG" style="width:100%"> <img alt="Homemade cards" src="Images/millennium.photos.040.JPG" style="width:100%"></div>
+					<div class="columnpage"><img alt="Dog treats bags" src="Images/millennium.photos.038.JPG" style="width:100%"> <img alt="Bird Boxes" src="Images/millennium.photos.035.JPG" style="width:100%">
+					<div class="tg-wrap">
+						<table class="tg" style="table-layout: fixed; width: 100%">
+							<tr>
+								<th class="tg-9dgk" colspan="2">Prices per unit<br></th>
+							</tr>
+							<tr>
+								<td class="tg-yq6s">Bird boxes<br></td>
+								<td class="tg-yq6s">£10</td>
+							</tr>
+							<tr>
+								<td class="tg-baqh">Bird treats</td>
+								<td class="tg-baqh">50p</td>
+							</tr>
+							<tr>
+								<td class="tg-yq6s">Bug boxes</td>
+								<td class="tg-yq6s">£10<br></td>
+							</tr>
+							<tr>
+								<td class="tg-baqh">Dog treats</td>
+								<td class="tg-baqh">50p</td>
+							</tr>
+							<tr>
+								<td class="tg-yq6s">Handmade cards</td>
+								<td class="tg-yq6s">50p</td>
+							</tr>
+							<tr>
+								<td class="tg-baqh">Sweet treats</td>
+								<td class="tg-baqh">50p</td>
+							</tr>
+						</table>
+					</div><img alt="Thank your for your support" src="Images/thank-you.1.jpg" style="width:100%"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="grad3end"></div>
+	<section class="page4section">
+		<div id="page4">
+			<a class="smooth" id="The.Millennium.Cafe"></a>
+			<div class="row section-41">
+				<br>
+			</div>
+			<div class="row section-4">
+				<h2 class="page4header" style="font-size:60px;">The Millennium Cafe</h2>
+				<div class="page4cafeimage"><img alt="Empty cafe lounge" height="50%" src="Images/DSC_0753-tiltshift_20190510104314973.jpg" width="100%"></div>
+				<h3 class="page4h3" style="font-size:16px;">Fancy a break?<br>
+				In our cafe you will delight on our homemade cakes, snacks and biscuits.<br>
+				Grab a hot drink for the cold days or have a chill drink for the warm weather.<br>
+				<u>Visit us every weekday, 9.00am - 3.00pm</u></h3><br>
+				<br>
+				<div class="rowpage4">
+					<div class="columnpage"><img alt="Dogs welcome sign" src="Images/dog-removebg.png" width="90%"></div>
+					<div class="columnpage">
+						<div class="tg-wrap">
+							<table class="tg" style="undefined;table-layout: fixed;">
+								<colgroup>
+									<col style="width: 174px">
+									<col style="width: 104px">
+									<col style="width: 90px">
+								</colgroup>
+								<tr>
+									<th class="tg-4x9w" colspan="3">COLD DRINKS</th>
+								</tr>
+								<tr>
+									<td class="tg-xq07">Water</td>
+									<td class="tg-wc2v" colspan="2">50p</td>
+								</tr>
+								<tr>
+									<td class="tg-0pky">Sparkling water</td>
+									<td class="tg-c3ow" colspan="2">£1</td>
+								</tr>
+								<tr>
+									<td class="tg-xq07">Coca Cola</td>
+									<td class="tg-wc2v" colspan="2">70p</td>
+								</tr>
+								<tr>
+									<td class="tg-0pky">San Pellegrino</td>
+									<td class="tg-c3ow" colspan="2">80p</td>
+								</tr>
+								<tr>
+									<td class="tg-xq07">7 UP</td>
+									<td class="tg-wc2v" colspan="2">70p</td>
+								</tr>
+								<tr>
+									<td class="tg-0pky">Fanta Orange</td>
+									<td class="tg-c3ow" colspan="2">70p</td>
+								</tr>
+								<tr>
+									<td class="tg-xq07">Del Monte Orange Juice</td>
+									<td class="tg-wc2v" colspan="2">£1.20p</td>
+								</tr>
+								<tr>
+									<td class="tg-fpzu">HOT DRINKS</td>
+									<td class="tg-fpzu"></td>
+									<td class="tg-fpzu">TAKE AWAY</td>
+								</tr>
+								<tr>
+									<td class="tg-xq07">Tea</td>
+									<td class="tg-wc2v">80p</td>
+									<td class="tg-xq07">£1</td>
+								</tr>
+								<tr>
+									<td class="tg-0pky">Coffee</td>
+									<td class="tg-c3ow">£1</td>
+									<td class="tg-0pky">£1.20p</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="columnpage">
+						<img align="center" alt="Toilet facilities sign" height="auto" src="Images/toilet-icon--removebg.png" width="75%">
+						<h2 class="cafeinfo"><strong>Toilet facilities for everyone</strong></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="grad5begin"></div>
+	<section class="page5section">
+		<div id="page5">
+			<a class="smooth" id="About.Us"></a>
+			<div class="row section-two">
+				<h2 class="page5header" style="font-size:60px;">About Us</h2>
+				<h3 class="page3h3" style="font-size:2vw;"><img alt="map icon" src="Images/map.png" style="width:25px; height:25px;"> <strong>The Chase, Dagenham, Romford RM7 0SS<br>
+				<img alt="Phone icon" src="Images/phone.png" style="width:25px; height:25px;"> +44 20 8227 2332</strong><br></h3>
+				<div class="rowpage5">
+					<div class="container">
+						<form action="mailto:teresa.byrne@bdc.ac.uk?subject=Mail%20from%20Our%20Site" method="post">
+							<h3 class="enquiryheader" style="font-size:2vw;">Say hello!</h3><u>Let us know what you liked most, where we can improve or ask us any question.</u><br>
+							<br>
+							<input id="fname" name="firstname" placeholder="Type your name" type="text"> <input id="lname" name="lastname" placeholder="Type your email" type="text"> 
+							<textarea id="subject" name="subject" placeholder="Write your message here" style="height:100px"></textarea> <input type="submit" value="Submit">
+						</form>
+					</div>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe frameborder="0" height="425" id="gmap_canvas" marginheight="0" marginwidth="0" name="gmap_canvas" scrolling="no" src="https://maps.google.com/maps?q=Eastbrookend%20Country%20Park%20Millennium%20Visitor%20Centre&t=&z=13&ie=UTF8&iwloc=&output=embed" width="750"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="bdclogo"><img alt="Barking and Dagenham College logo" src="Images/BDC.logo.jpg" style="width:126px; height:45px;"></div>
+		<div class="pfoot">
+			<h4>© 2019 Copyright: David Cardoso<br>
+			Contact: <a href="mailto:20412003@g.bdc.ac.uk">20412003@g.bdc.ac.uk</a></h4>
+		</div>
+		<div class="foot2ndlogo"><img alt="Barking and Dagenham logo" height="100%" src="Images/LBBD_New2014_RGB_web.png" width="100%"></div>
+	</footer>
+</body>
+</html>
